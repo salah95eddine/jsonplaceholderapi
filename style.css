@@ -1,0 +1,133 @@
+    body{
+    padding: 0;
+    margin: 0;
+    }
+    .container {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    align-content: start;
+  }
+  
+  .item:nth-child(1),
+  .item:nth-child(4) {
+    width: 100%;
+    height: 5%;
+  }
+
+  .item:nth-child(2) {
+    width: 20%;
+    height: 75%;
+  }
+  
+  .item:nth-child(3) {
+    flex-grow: 1;
+    height: 75%;
+  }
+
+
+  nav{
+    background-color: #1877F2;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 40px 10px 40px;
+  }
+  .profile img{
+    width: 50px;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+  .notifSearch{
+    display: flex;
+    justify-content: space-between;
+    justify-content: center;
+    gap: 800px;
+  }
+  .notifSearch img{
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+  }
+  .notif{
+    display: flex;
+    gap: 20px;
+  }
+  nav span{
+    color: #063e89;
+    border: 3px solid white;
+    padding: 2px;
+  }
+  nav input{
+    width: 200px;
+    padding: 6px;
+    border-radius: 8px;
+  }
+  .logo{
+    letter-spacing: 2px;
+    cursor: pointer;
+  }
+  .users{
+    background-color: #80808090;
+    padding: 20px;
+    width: 400px ;
+    border-radius: 10px ;
+  }
+  .userId{
+    background-color: white;
+    border-radius: 10px;
+    padding: 10px;
+    margin-bottom: 20px;
+    cursor: pointer;
+  }
+  .userId:hover{
+    border: #063e89 solid 2px;
+    transition: 0.3s;
+    transform: scale(0.94);
+  }
+  .userId h2 , .userId p{
+    margin: 5px;
+  }
+  .posts{
+    padding: 20px;
+    width: 600px;
+    background-color: #80808027;
+    border-radius: 10px;
+  }
+  .posts div{
+    margin-bottom: 20px;
+    background-color: white;
+    padding: 10px;
+    border-radius: 10px;
+  }
+  .posts p{
+    width: 80%;
+    text-align: justify;
+    font-size: 16px;
+    font-weight: normal;
+  }
+  hr{
+    height: 1px;
+    background-color: #063e89;
+    width: 100%;
+  }
+
+
+  .footer{
+    height: 100px;
+    padding: 20px;
+    background-color:#1877F2;
+    color: white;
+    text-align: center;
+    font-size: 50px;
+  }
+  @media (max-width: 768px) { 
+    .item:nth-child(2) {
+        width: 100%; /* Full width on small screens */
+        height: auto; /* Adjust height dynamically */
+    }
+    .notifSearch{
+        display: none;
+    }
+}
